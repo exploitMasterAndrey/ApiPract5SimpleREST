@@ -18,8 +18,7 @@ function contactsToHTML({id, phone, name}){
                 <td>${phone}</td>
                 <td>
                     <div class="btn-group" role="group" aria-label="Basic outlined example">
-                        <a type="button" th:href="@{/editContact/${id}}" class="btn btn-outline-secondary"><i class="bi bi-pen"></i></a>
-                        <a type="button" class="btn btn-outline-secondary"><i class="bi bi-telephone-outbound"></i></a>
+                        <a type="button" href="/editContact/${id}" class="btn btn-outline-secondary"><i class="bi bi-pen"></i></a>                        
                         <a type="button" onclick="deleteHTMLContact(${id})" class="btn btn-outline-secondary"><i class="bi bi-x-circle"></i></a>
                     </div>
                 </td>

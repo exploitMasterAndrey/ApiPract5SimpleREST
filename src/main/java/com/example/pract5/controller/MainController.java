@@ -24,10 +24,7 @@ public class MainController {
     }
 
     @GetMapping("/editContact/{id}")
-    public String getEditPage(/*Model model, */@PathVariable Long id){
-        /*Contact contact = contactService.getContactById(id);*/
-
-        /*model.addAttribute("contact", contact);*/
+    public String getEditPage(){
         return "edit";
     }
 
