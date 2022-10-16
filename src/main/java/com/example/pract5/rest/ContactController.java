@@ -55,7 +55,7 @@ public class ContactController {
     @PutMapping("/update")
     @Operation(
             tags = "Обновить данные о контакте",
-            summary = "Данные о контакте будут удалены",
+            summary = "Данные о контакте будут обновлены",
             description = "Нажмите кнопку \"Try it out\" и вводите данные о контакте, который хотите изменить",
 
             requestBody = @io.swagger.v3.oas.annotations.parameters.RequestBody(description = "Описание нашего контакта",
